@@ -17,7 +17,7 @@ public class Main {  //Karena java menggunakan OOP, yang maksudnya adalh semua k
         System.out.println("Hello guys");
     }
 
-    static String luasPersegi(int sisi) {
+     String luasPersegi(int sisi) {
         return "Luas Persegi adalah " + sisi * sisi;
     }
 
@@ -33,11 +33,12 @@ public class Main {  //Karena java menggunakan OOP, yang maksudnya adalh semua k
         a.greet2();
 
         Scanner input = new Scanner(System.in);
+        Main j = new Main();
         System.out.print("Masukkan sisi : ");
         int angka = input.nextInt();
-        System.out.println(luasPersegi(angka));
+        System.out.println(j.luasPersegi(angka));
 
-        System.out.println(luasPersegi(5));
+        System.out.println(j.luasPersegi(5));
 
         for (int i = 1; i < 10; i++) {
             System.out.print(i + ",");
@@ -72,7 +73,7 @@ public class Main {  //Karena java menggunakan OOP, yang maksudnya adalh semua k
             }
         } else if (pilih == 2) {
             System.out.print("Input sisi : ");
-            System.out.println(luasPersegi(input.nextInt()));
+            System.out.println(j.luasPersegi(input.nextInt()));
         }
 
         System.out.println("\n1. Login\n" + "2. Menghitung luas persegi");
@@ -103,7 +104,7 @@ public class Main {  //Karena java menggunakan OOP, yang maksudnya adalh semua k
                 break;
             case 2:
                 System.out.print("Input sisi : ");
-                System.out.println(luasPersegi(input.nextInt()));
+                System.out.println(j.luasPersegi(input.nextInt()));
                 break;
             default:
                 System.out.println("Invalid");
